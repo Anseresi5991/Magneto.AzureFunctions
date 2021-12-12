@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\PruebaNet6\Magneto.AzureFunctions.Validator.csproj" />
+    <ProjectReference Include="..\Magneto.AzureFunctions.Validator\Magneto.AzureFunctions.Validator.csproj" />
   </ItemGroup>
 
 </Project>
