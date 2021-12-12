@@ -33,7 +33,7 @@ namespace Magneto.AzureFunctions.Validator
             }
             catch (Exception ex)
             {
-                log.LogInformation(ex.Message);
+                log.LogError(ex.Message);
                 return new HttpResponseMessage(System.Net.HttpStatusCode.Forbidden);
             }
         }
