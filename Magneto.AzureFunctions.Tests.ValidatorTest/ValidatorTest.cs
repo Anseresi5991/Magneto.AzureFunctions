@@ -4,10 +4,10 @@ using Xunit;
 
 namespace Magneto.AzureFunctions.Tests.ValidatorTest
 {
-    public class UnitTest1
+    public class ValidatorTest
     {
         [Fact]
-        public void Test1()
+        public void IsMutant()
         {
             bool result = false;
             for (int i = 0; i < 1000000; i++)
@@ -43,7 +43,7 @@ namespace Magneto.AzureFunctions.Tests.ValidatorTest
                 string value = "";
                 for (int i = 0; i < columsArray; i++)
                 {
-                    value = value + letters[random.Next(0, letters.Length - 1)];
+                    value = value + letters[random.Next(0, letters.Length)];
                 }
                 dnaDto.dna[r] = value;
             }

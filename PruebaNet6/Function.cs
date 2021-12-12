@@ -28,14 +28,12 @@ namespace Magneto.AzureFunctions.Validator
                 int secuenceMin = int.Parse(Environment.GetEnvironmentVariable("SecuenceMin"));
                 int secuenceLetters = int.Parse(Environment.GetEnvironmentVariable("SecuenceLetters"));
                 bool res = IsMutant(data, dnac, secuenceMin, secuenceLetters);
-
                 return (res ? new HttpResponseMessage(System.Net.HttpStatusCode.OK) : new HttpResponseMessage(System.Net.HttpStatusCode.Forbidden));
 
             }
             catch (Exception ex)
             {
                 log.LogInformation(ex.Message);
-
                 return new HttpResponseMessage(System.Net.HttpStatusCode.Forbidden);
             }
         }
@@ -57,7 +55,6 @@ namespace Magneto.AzureFunctions.Validator
                     chars[position] = '1';
                 }
             }
-
             return (secuence < secuenceMin ? false : true);
         }
         private static int ValidateSecuenceRight(List<char> list, char letter, int index, int countChar, int secuenceLetters)
@@ -126,7 +123,6 @@ namespace Magneto.AzureFunctions.Validator
                     else
                         return 0;
             }
-
             return 0;
         }
     }
