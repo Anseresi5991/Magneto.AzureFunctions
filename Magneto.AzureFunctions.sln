@@ -19,6 +19,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Magneto.AzureFunction.Stats
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Magneto.AzureFunctions.Stat", "Magneto.AzureFunctions.Stat\Magneto.AzureFunctions.Stat.csproj", "{B02C4D9A-0D24-4653-82FB-2407993B724A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Architecture", "Architecture", "{123F4790-260C-4B26-B135-7411FE463A21}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Downloads\MagnetoArchitecture.PNG = ..\..\..\Downloads\MagnetoArchitecture.PNG
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
