@@ -17,6 +17,10 @@ Url:https://magnetoazurefunctionsorchestrator20211212175305.azurewebsites.net/ap
 Body:{"dna":[ "ATGCGA", "CAGTGC", "TTATGT", "AGAAGG", "CCCCTA", "TCACTG" ]}<br />
 Type:Post<br /><br />
 
+# Consultar Estadistica<br /><br />
+Url:https://magnetoazurefunctionsstat20211213135037.azurewebsites.net/api/stats<br />
+Type:Get<br /><br />
+
 # Ejecución de algoritmo<br /><br />
 Url:https://magnetoazurefunctionsvalidator20211211162841.azurewebsites.net/api/validator<br />
 Body:{"dna":[ "ATGCGA", "CAGTGC", "TTATGT", "AGAAGG", "CCCCTA", "TCACTG" ]}<br />
