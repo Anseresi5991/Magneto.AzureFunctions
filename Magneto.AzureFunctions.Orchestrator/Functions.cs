@@ -22,18 +22,17 @@ namespace Magneto.AzureFunctions.Orchestrator
         {
             log.LogInformation("C# HTTP trigger function processed a request.");
             string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
+            QueueDna data = JsonConvert.DeserializeObject<QueueDna>(requestBody);
             try
             {
-            bool isMutant = await IsMutant(requestBody);
-            if (isMutant)
-                PublishMessage(requestBody);
+                data.IsMutant = await IsMutant(requestBody);
             }
             catch (Exception ex)
             {
                 log.LogError(ex.Message);
-                return new HttpResponseMessage(System.Net.HttpStatusCode.Forbidden);
             }
-            return new HttpResponseMessage(System.Net.HttpStatusCode.OK);
+            PublishMessage(data);
+            return (data.IsMutant ? new HttpResponseMessage(System.Net.HttpStatusCode.OK) : new HttpResponseMessage(System.Net.HttpStatusCode.Forbidden));
         }
         public static async Task<bool> IsMutant(string json)
         {
@@ -55,7 +54,7 @@ namespace Magneto.AzureFunctions.Orchestrator
                 }
             }
         }
-        public static void PublishMessage(string request)
+        public static void PublishMessage(QueueDna request)
         {
             var factory = new ConnectionFactory()
             {
