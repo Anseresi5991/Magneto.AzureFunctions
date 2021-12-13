@@ -15,9 +15,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Magneto.AzureFunctions.Orch
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Magneto.AzureFunctions.Orchestrator", "Magneto.AzureFunctions.Orchestrator\Magneto.AzureFunctions.Orchestrator.csproj", "{221DE9C7-0A16-4907-8D35-9D7EC5AAC594}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Magneto.AzureFunctions.Metrics", "Magneto.AzureFunctions.Metrics", "{D384F431-0532-4496-A9FA-5F77D3997792}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Magneto.AzureFunction.Stats", "Magneto.AzureFunction.Stats", "{6D2234A4-9859-4273-9B90-2F064E19FDA7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Magneto.AzureFunctions.Metrics", "Magneto.AzureFunctions.Metrics\Magneto.AzureFunctions.Metrics.csproj", "{06259EBD-630D-46DE-B165-D5E9B0FED62E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Magneto.AzureFunctions.Stat", "Magneto.AzureFunctions.Stat\Magneto.AzureFunctions.Stat.csproj", "{B02C4D9A-0D24-4653-82FB-2407993B724A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,10 +37,10 @@ Global
 		{221DE9C7-0A16-4907-8D35-9D7EC5AAC594}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{221DE9C7-0A16-4907-8D35-9D7EC5AAC594}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{221DE9C7-0A16-4907-8D35-9D7EC5AAC594}.Release|Any CPU.Build.0 = Release|Any CPU
-		{06259EBD-630D-46DE-B165-D5E9B0FED62E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{06259EBD-630D-46DE-B165-D5E9B0FED62E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{06259EBD-630D-46DE-B165-D5E9B0FED62E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{06259EBD-630D-46DE-B165-D5E9B0FED62E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B02C4D9A-0D24-4653-82FB-2407993B724A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B02C4D9A-0D24-4653-82FB-2407993B724A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B02C4D9A-0D24-4653-82FB-2407993B724A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B02C4D9A-0D24-4653-82FB-2407993B724A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -49,7 +49,7 @@ Global
 		{BD0F3E93-29A1-4F3C-A7ED-507B2649680E} = {1C110584-C4A9-4C68-917A-C2C047D54CF5}
 		{B836E9A6-7910-4E66-841C-B8DED2A7F7AF} = {CA703CBD-6547-4427-B507-0041123C3166}
 		{221DE9C7-0A16-4907-8D35-9D7EC5AAC594} = {DF99263B-51E6-4DB7-85A7-5B209A305C5A}
-		{06259EBD-630D-46DE-B165-D5E9B0FED62E} = {D384F431-0532-4496-A9FA-5F77D3997792}
+		{B02C4D9A-0D24-4653-82FB-2407993B724A} = {6D2234A4-9859-4273-9B90-2F064E19FDA7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {538BC8CC-099C-45CD-B9FC-7BF2B222F29C}

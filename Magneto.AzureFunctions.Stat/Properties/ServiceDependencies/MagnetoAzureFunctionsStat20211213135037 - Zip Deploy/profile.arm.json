@@ -7,7 +7,7 @@
   "parameters": {
     "resourceGroupName": {
       "type": "string",
-      "defaultValue": "AppServicesMagneto",
+      "defaultValue": "MagnetoAzureFunctionsValidator20211211162841ResourceGroup",
       "metadata": {
         "description": "Name of the resource group for the resource. It is recommended to put resources under same resource group for better tracking."
       }
@@ -21,7 +21,7 @@
     },
     "resourceName": {
       "type": "string",
-      "defaultValue": "MagnetoAzureFunctionsMetrics20211213115843",
+      "defaultValue": "MagnetoAzureFunctionsStat20211213135037",
       "metadata": {
         "description": "Name of the main resource to be created by this template."
       }

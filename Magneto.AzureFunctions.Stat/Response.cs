@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Magneto.AzureFunctions.Metrics
+namespace Magneto.AzureFunctions.Stat
 {
     public class Response
     {
-        public Response(int mutants,int humans,decimal ratio)
+        public Response(int mutants, int humans, decimal ratio)
         {
             count_Human_dna = humans;
             count_mutant_dna = mutants;

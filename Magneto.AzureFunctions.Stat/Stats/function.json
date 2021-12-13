@@ -1,5 +1,5 @@
 {
-  "generatedBy": "Microsoft.NET.Sdk.Functions.Generator-4.0.1",
+  "generatedBy": "Microsoft.NET.Sdk.Functions.Generator-4.0.0",
   "configurationSource": "attributes",
   "bindings": [
     {
@@ -12,6 +12,6 @@
     }
   ],
   "disabled": false,
-  "scriptFile": "../bin/Magneto.AzureFunctions.Metrics.dll",
-  "entryPoint": "Magneto.AzureFunctions.Metrics.Function.Run"
+  "scriptFile": "../bin/Magneto.AzureFunctions.Stat.dll",
+  "entryPoint": "Magneto.AzureFunctions.Stat.Function1.Stat"
 }
