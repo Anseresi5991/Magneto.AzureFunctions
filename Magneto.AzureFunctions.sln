@@ -17,7 +17,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Magneto.AzureFunctions.Orch
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Magneto.AzureFunctions.Metrics", "Magneto.AzureFunctions.Metrics", "{D384F431-0532-4496-A9FA-5F77D3997792}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Magneto.AzureFunctions.Metrics", "Magneto.AzureFunctions.Metric\Magneto.AzureFunctions.Metrics.csproj", "{06259EBD-630D-46DE-B165-D5E9B0FED62E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Magneto.AzureFunctions.Metrics", "Magneto.AzureFunctions.Metrics\Magneto.AzureFunctions.Metrics.csproj", "{06259EBD-630D-46DE-B165-D5E9B0FED62E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

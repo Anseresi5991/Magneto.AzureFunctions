@@ -12,7 +12,7 @@ using Magneto.AzureFunctions.Metrics;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Magneto.AzureFunctions.Metric
+namespace Magneto.AzureFunctions.Metrics
 {
     public static class Function
     {

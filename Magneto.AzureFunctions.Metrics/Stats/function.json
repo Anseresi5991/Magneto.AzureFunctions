@@ -13,5 +13,5 @@
   ],
   "disabled": false,
   "scriptFile": "../bin/Magneto.AzureFunctions.Metrics.dll",
-  "entryPoint": "Magneto.AzureFunctions.Metric.Function.Run"
+  "entryPoint": "Magneto.AzureFunctions.Metrics.Function.Run"
 }
