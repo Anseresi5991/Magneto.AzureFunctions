@@ -59,8 +59,8 @@ namespace Magneto.AzureFunctions.Validator
         }
         private static int ValidateSecuenceRight(List<char> list, char letter, int index, int countChar, int secuenceLetters)
         {
-            var availablePositions = countChar - index;
-            if (availablePositions >= (secuenceLetters))
+            var availablePositions = (list.Count() - (index + 1)) % countChar;
+            if (availablePositions >= (secuenceLetters - 1))
             {
                 if (list.Skip(index).Take(secuenceLetters).Count(x => x == letter) == secuenceLetters)
                     return 1;
@@ -88,16 +88,18 @@ namespace Magneto.AzureFunctions.Validator
         }
         private static int ValidateSecuenceBelowRight(List<char> list, char letter, int index, int countChar, int secuenceLetters)
         {
-            var availablePositions = countChar - index;
+            var availablePositions = (list.Count() - (index + 1)) % countChar;
             int rows = (list.Count() / countChar) - (secuenceLetters - 1);
             int positionMax = rows * countChar;
-            if (availablePositions >= secuenceLetters && index < positionMax)
+            if (availablePositions >= (secuenceLetters - 1) && index < positionMax)
             {
                 int sum = 0;
                 for (int i = 1; i < secuenceLetters; i++)
                 {
                     if (list[index + (countChar * i) + i].Equals(letter))
                         sum++;
+                    else
+                        return 0;
                 }
                 if (sum == secuenceLetters - 1)
                     return 1;
@@ -108,20 +110,23 @@ namespace Magneto.AzureFunctions.Validator
         }
         private static int ValidateSecuenceBelowLeft(List<char> list, char letter, int index, int countChar, int secuenceLetters)
         {
-            var availablePositions = index;
+            var availablePositions = (list.Count() - (index + 1)) % countChar;
             int rows = (list.Count() / countChar) - (secuenceLetters - 1);
             int positionMax = rows * countChar;
             if (availablePositions <= (secuenceLetters - 1) && index < positionMax)
-            { int sum = 0;
-                    for (int i = 1; i < secuenceLetters; i++)
-                    {
-                        if (list[index + (countChar * i) - i].Equals(letter))
-                            sum++;
-                    }
-                    if (sum == secuenceLetters - 1)
-                        return 1;
+            {
+                int sum = 0;
+                for (int i = 1; i < secuenceLetters; i++)
+                {
+                    if (list[index + (countChar * i) - i].Equals(letter))
+                        sum++;
                     else
                         return 0;
+                }
+                if (sum == secuenceLetters - 1)
+                    return 1;
+                else
+                    return 0;
             }
             return 0;
         }
